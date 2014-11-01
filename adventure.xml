@@ -2,9 +2,13 @@
 <adventure>
 	<room start="true" id="start_Room">
 		<c value="Go North" goto="cassle_northgate" />
-		<c value="Go West" goto="field" />
 		<c value="Pick up Sword" take="Sword" />
 		
-		<disc e="0">Welcome to TESTGAME! You are in a patch of woods</disc>
+		<disc avalibale="onStart">Welcome to TESTGAME!</disc>
+		<disc>You are in a patch of woods</disc>
+	</room>
+	<room id="cassle_northgate">
+		<c value="Go South" goto="start_Room" />
+		<disc> You are at the north gate of a cassle</disc>
 	</room>
 </adventure>
