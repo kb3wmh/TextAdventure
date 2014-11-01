@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<adventure>
+	<room start="true" id="start_Room">
+		<c value="Go North" goto="cassle_northgate" />
+		<c value="Go West" goto="field" />
+		<c value="Pick up Sword" take="Sword" />
+		
+		<disc e="0">Welcome to TESTGAME! You are in a patch of woods</disc>
+	</room>
+</adventure>
